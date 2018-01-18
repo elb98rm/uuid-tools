@@ -95,9 +95,9 @@ class UuidTools
 
     /**
      * @param $id
-     * @return mixed
+     * @return string
      */
-    public function idToIdText(int $id) : string
+    public function idToIdText(strong $id) : string
     {
         $array = unpack("H*", $id);
         $array = preg_replace("/([0-9a-f]{8})([0-9a-f]{4})([0-9a-f]{4})([0-9a-f]{4})([0-9a-f]{12})/", "$1-$2-$3-$4-$5",
@@ -110,9 +110,9 @@ class UuidTools
      * Converts the human readable string (with dashes) to a binary(16) (required for the primary key)
      *
      * @param $text_id
-     * @return int $id
+     * @return string $id
      */
-    public function idTextToId($text_id) : int
+    public function idTextToId($text_id) : string
     {
         return pack("H*", $this->removeDashes($text_id));
     }
