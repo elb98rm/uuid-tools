@@ -80,7 +80,7 @@ class UuidTools
      * @return string $uuid uuid string (in text)
      * @throws \Exception
      */
-    public function createTextId($no_dashes = false) : string
+    public function createIdText($no_dashes = false) : string
     {
         $uuid = $this->create();
 
