@@ -97,7 +97,7 @@ class UuidTools
      * @param $id
      * @return string
      */
-    public function idToIdText(strong $id) : string
+    public function idToIdText(string $id) : string
     {
         $array = unpack("H*", $id);
         $array = preg_replace("/([0-9a-f]{8})([0-9a-f]{4})([0-9a-f]{4})([0-9a-f]{4})([0-9a-f]{12})/", "$1-$2-$3-$4-$5",
