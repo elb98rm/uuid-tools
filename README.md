@@ -13,7 +13,7 @@ The composer file includes laravel providers and aliases so it the class should 
 
 ## Usage
 
-tbc
+Please refer to the [usage](docs/usage.md) page.
 
 ## Change log
 
